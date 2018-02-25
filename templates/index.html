@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>AJAX Ninja</title>
+        <link rel="stylesheet" types="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script rel="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="display"></div>
+            <div class="selections">
+                <button class='turtle' id="Raphael">Red</button>
+                <button class='turtle'  id="Leonardo">Blue</button>
+                <button class='turtle'  id="Michelangelo">Orange</button>
+                <button class='turtle'  id="Donatello">Purple</button>
+            </div>
+            <div class="custom_pick">
+                <h3>Or choose a custom color:</h3>
+                <input id='custom_color' type="text">
+                <button class='custom_color'>Enter</button>
+            </div>
+        </div>
+    </body>
+</html>
